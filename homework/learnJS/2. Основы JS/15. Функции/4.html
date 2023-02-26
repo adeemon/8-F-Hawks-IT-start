@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function pow(x, n) {
+            let output = x;
+
+            for (let i = 1; i < n; i++) {
+                output = output * x;
+            }
+
+            return output;
+        }
+
+        let x = prompt('Введите x');
+        let n = prompt('Введите степень x');
+        alert(n < 1 ? 'Некорректная степень' : pow(x, n));
+    </script>
+</head>
+
+</html>
